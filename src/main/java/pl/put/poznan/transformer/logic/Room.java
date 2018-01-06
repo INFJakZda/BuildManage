@@ -2,25 +2,44 @@ package pl.put.poznan.transformer.logic;
 
 public class Room {
 
-    private float length;
-    private float width;
-    private float height;
+    private String id;
+    private String name;
 
-    public Room(float length, float width, float height) {
-        this.length = length;
-        this.width = width;
-        this.height = height;
+    private float area;
+    private float cube;
+    private float heating;
+    private float light;
+
+    public Room(String id, String name, float area, float cube, float heating, float light) {
+        this.id = id;
+        this.name = name;
+        this.area = area;
+        this.cube = cube;
+        this.heating = heating;
+        this.light = light;
     }
 
-    public float getLength() {
-        return length;
+    public String getId() {
+        return id;
     }
 
-    public float getWidth() {
-        return width;
+    public String getName() {
+        return name;
     }
 
-    public float getHeight() {
-        return height;
+    public float getArea() {
+        return area;
+    }
+
+    public float getCube() {
+        return cube;
+    }
+
+    public float getHeating() {
+        return heating;
+    }
+
+    public float getLight() {
+        return light;
     }
 }
