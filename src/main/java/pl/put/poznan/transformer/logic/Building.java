@@ -65,7 +65,7 @@ public class Building implements Localization {
         if (!levelList.isEmpty()){
             for (Level2 level : levelList){
                 if (level instanceof Localization){
-                    wart += level.getLight();
+                    wart += level.getHeating();
                 }
             }
 
