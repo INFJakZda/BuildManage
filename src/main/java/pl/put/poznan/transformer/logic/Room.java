@@ -14,9 +14,9 @@ public class Room {
         this.id = id;
         this.name = name;
         this.area = area;
-        this.cube = cube;
-        this.heating = heating;
-        this.light = light;
+        this.cube = volume;
+        this.heating = heatUsage;
+        this.light = lightUsage;
     }
 
     public String getId() {
