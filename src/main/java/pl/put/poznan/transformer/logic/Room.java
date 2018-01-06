@@ -10,7 +10,7 @@ public class Room {
     private float heatUsage;
     private float lightUsage;
 
-    public Room(String id, String name, float area, float cube, float heating, float light) {
+    public Room(String id, String name, float area, float volume, float heatUsage, float lightUsage) {
         this.id = id;
         this.name = name;
         this.area = area;
