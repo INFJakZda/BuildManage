@@ -39,6 +39,31 @@ public class Room {
         return heating;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setArea(float area) {
+        this.area = area;
+    }
+
+    public void setCube(float cube) {
+        this.cube = cube;
+    }
+
+    public void setHeating(float heating) {
+        this.heating = heating;
+    }
+
+    public void setLight(float light) {
+        this.light = light;
+    }
+
+    public void setId(String id) {
+
+        this.id = id;
+    }
+
     public float getLight() {
         return light;
     }
