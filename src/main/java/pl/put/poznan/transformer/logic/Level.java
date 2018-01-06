@@ -3,11 +3,11 @@ package pl.put.poznan.transformer.logic;
 /**
  * This is just an example to show that the logic should be outside the REST service.
  */
-public class BuildManage {
+public class Level {
 
     private final String[] transforms;
 
-    public BuildManage(String[] transforms){
+    public Level(String[] transforms){
         this.transforms = transforms;
     }
 

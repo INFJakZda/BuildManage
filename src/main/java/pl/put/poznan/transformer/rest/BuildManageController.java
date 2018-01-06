@@ -2,7 +2,7 @@ package pl.put.poznan.transformer.rest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-import pl.put.poznan.transformer.logic.BuildManage;
+import pl.put.poznan.transformer.logic.Level;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ public class BuildManageController {
         logger.debug(Arrays.toString(transforms));
 
         // do the transformation, you should run your logic here, below just a silly example
-        BuildManage transformer = new BuildManage(transforms);
+        Level transformer = new Level(transforms);
         return transformer.transform(text);
     }
 
@@ -35,7 +35,7 @@ public class BuildManageController {
         logger.debug(Arrays.toString(transforms));
 
         // do the transformation, you should run your logic here, below just a silly example
-        BuildManage transformer = new BuildManage(transforms);
+        Level transformer = new Level(transforms);
         return transformer.transform(text);
     }
 
