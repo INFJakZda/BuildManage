@@ -1,6 +1,6 @@
 package pl.put.poznan.transformer.logic;
 
-public class Room {
+public class Room implements Localization {
 
     private String id;
     private String name;
@@ -19,6 +19,10 @@ public class Room {
         this.light = light;
     }
 
+    public Room(float area) {
+        this.area = area;
+    }
+
     public String getId() {
         return id;
     }
@@ -26,20 +30,24 @@ public class Room {
     public String getName() {
         return name;
     }
-
+    @Override
     public float getArea() {
         return area;
     }
-
+    @Override
     public float getCube() {
         return cube;
     }
-
+    @Override
     public float getHeating() {
         return heating;
     }
-
+    @Override
     public float getLight() { return light; }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -59,9 +67,5 @@ public class Room {
 
     public void setLight(float light) {
         this.light = light;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 }
