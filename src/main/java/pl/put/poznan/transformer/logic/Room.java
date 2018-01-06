@@ -6,17 +6,17 @@ public class Room {
     private String name;
 
     private float area;
-    private float cube;
-    private float heating;
-    private float light;
+    private float volume;
+    private float heatUsage;
+    private float lightUsage;
 
     public Room(String id, String name, float area, float cube, float heating, float light) {
         this.id = id;
         this.name = name;
         this.area = area;
-        this.cube = volume;
-        this.heating = heatUsage;
-        this.light = lightUsage;
+        this.volume = volume;
+        this.heatUsage = heatUsage;
+        this.lightUsage = lightUsage;
     }
 
     public String getId() {
@@ -31,12 +31,16 @@ public class Room {
         return area;
     }
 
-    public float getCube() {
-        return cube;
+    public float getVolume() {
+        return volume;
     }
 
-    public float getHeating() {
-        return heating;
+    public float getHeatUsage() {
+        return heatUsage;
+    }
+
+    public float getLightUsage() {
+        return lightUsage;
     }
 
     public void setName(String name) {
@@ -47,24 +51,20 @@ public class Room {
         this.area = area;
     }
 
-    public void setCube(float cube) {
-        this.cube = cube;
+    public void setCube(float volume) {
+        this.volume = volume;
     }
 
-    public void setHeating(float heating) {
-        this.heating = heating;
+    public void setHeating(float heatUsage) {
+        this.heatUsage = heatUsage;
     }
 
-    public void setLight(float light) {
-        this.light = light;
+    public void setLight(float lightUsage) {
+        this.lightUsage = lightUsage;
     }
 
     public void setId(String id) {
 
         this.id = id;
-    }
-
-    public float getLight() {
-        return light;
     }
 }
