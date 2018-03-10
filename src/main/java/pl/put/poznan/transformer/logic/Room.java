@@ -10,6 +10,15 @@ public class Room implements Localization {
     private float heating;
     private float light;
 
+    /**
+     * Room constructor
+     * @param id
+     * @param name
+     * @param area
+     * @param cube
+     * @param heating
+     * @param light
+     */
     public Room(String id, String name, float area, float cube, float heating, float light) {
         this.id = id;
         this.name = name;
@@ -18,6 +27,11 @@ public class Room implements Localization {
         this.heating = heating;
         this.light = light;
     }
+
+    /**
+     * Room constructor
+     * @param area
+     */
 
     public Room(float area) {
         this.area = area;
@@ -30,18 +44,34 @@ public class Room implements Localization {
     public String getName() {
         return name;
     }
+    /**
+     * Get area of room
+     * @return area of room
+     */
     @Override
     public float getArea() {
         return area;
     }
+    /**
+     * Get cubature of room
+     * @return cubature of room
+     */
     @Override
     public float getCube() {
         return cube;
     }
+    /**
+     * Get heating of room
+     * @return heating of room
+     */
     @Override
     public float getHeating() {
         return heating;
     }
+    /**
+     * Get lighting of room
+     * @return lighting of room
+     */
     @Override
     public float getLight() { return light; }
 
